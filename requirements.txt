@@ -14,6 +14,4 @@ python-subunit==1.2.0
 sure==1.2.24
 tornado==4.3
 tox==2.3.0
-markment==0.2.21
-steadymark==0.6.0
 testtools==1.8.1

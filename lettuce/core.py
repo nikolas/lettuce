@@ -886,7 +886,7 @@ class Background(object):
             try:
                 results.append(step.run(ignore_case))
             except Exception as e:
-                print e
+                print(e)
                 pass
 
             call_hook('after_each', 'step', step)

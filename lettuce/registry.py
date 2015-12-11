@@ -152,9 +152,9 @@ def call_hook(situation, kind, *args, **kw):
         try:
             callback(*args, **kw)
         except Exception as e:
-            print "=" * 1000
+            print("=" * 1000)
             traceback.print_exc(e)
-            print
+            print('')
             raise
 
 

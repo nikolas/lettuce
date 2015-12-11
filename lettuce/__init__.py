@@ -171,7 +171,7 @@ class Runner(object):
         try:
             self.loader.find_and_load_step_definitions()
         except StepLoadingError as e:
-            print "Error loading step definitions:\n", e
+            print("Error loading step definitions:\n", e)
             return
 
         call_hook('before', 'all')
@@ -189,18 +189,18 @@ class Runner(object):
         except exceptions.LettuceSyntaxError as e:
             sys.stderr.write(e.msg)
             failed = True
-        except exceptions.NoDefinitionFound, e:
+        except (exceptions.NoDefinitionFound, e):
             sys.stderr.write(e.msg)
             failed = True
         except:
             if not self.failfast:
                 e = sys.exc_info()[1]
-                print "Died with %s" % str(e)
+                print("Died with %s" % str(e))
                 traceback.print_exc()
             else:
-                print
-                print ("Lettuce aborted running any more tests "
-                       "because was called with the `--failfast` option")
+                print('')
+                print("Lettuce aborted running any more tests "
+                      "because was called with the `--failfast` option")
 
             failed = True
 
