@@ -19,7 +19,7 @@ Lettuce is a [BDD](http://en.wikipedia.org/wiki/Behavior_Driven_Development) too
 1. [Cucumber](http://cukes.info/) makes [Ruby](http://www.ruby-lang.org/) even more sexy. Python needed something like it.
 2. Testing must be funny and easy.
 3. Most python developers code in python, not ruby.
-4. Ruby has Capistrano, Python has Fabric. Ruby has cucumber, Python has lettuce.
+4. Ruby has Capistrano, Python has Fabric. Ruby has cucumber, Python has lettuce (and [behave](http://pythonhosted.org/behave/)).
 5. I personally don't like mixing many languages in small projects. Keeping all in python is better.
 6. I love python, and ever did. But I also ever missed something that make writing tests easier and funnier.
 7. I like [nose](https://github.com/nose-devs/nose), which is a unittest pythonic framework. However, as the project I work on grows, so do the tests, and it becomes harder to understand them.
